@@ -1100,24 +1100,23 @@ function install(Vue) {
   _Vue = Vue;
   Vue.component('Game', game);
 }
-;
 // CONCATENATED MODULE: ./src/index.js
 
 
 
 
-var src_VueSync = function VueSync(options) {
-  _classCallCheck(this, VueSync);
+var src_VSync = function VSync() {
+  _classCallCheck(this, VSync);
 };
 
-_defineProperty(src_VueSync, "install", void 0);
+_defineProperty(src_VSync, "install", void 0);
 
 
-;
+src_VSync.install = install;
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (src_VueSync);
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (src_VSync);
 
 
 
@@ -1133,4 +1132,4 @@ module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u20
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-sync.common.js.map
+//# sourceMappingURL=v-sync.common.js.map

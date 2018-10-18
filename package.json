@@ -1,17 +1,17 @@
 {
-  "name": "vue-sync",
+  "name": "@voxmures/v-sync",
   "version": "0.1.0",
-  "private": true,
   "description": "HTML5 Games Made Simple",
-  "main": "dist/vue-sync.common.js",
+  "main": "dist/v-sync.common.js",
   "scripts": {
+    "dev": "node examples/server.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-sync ./src/index.js",
+    "build": "vue-cli-service build --target lib --name v-sync ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/voxmures/vue-sync.git"
+    "url": "git+https://github.com/voxmures/v-sync.git"
   },
   "files": [
     "dist/*",
@@ -26,16 +26,21 @@
   "author": "Joaquín Campos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/voxmures/vue-sync/issues"
+    "url": "https://github.com/voxmures/v-sync/issues"
   },
   "dependencies": {
+    "pixi.js": "^4.8.2",
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
-    "vue-template-compiler": "^2.5.17"
+    "express-urlrewrite": "^1.2.0",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.21.0",
+    "webpack-dev-middleware": "^3.4.0"
   },
   "eslintConfig": {
     "root": true,

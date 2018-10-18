@@ -1,4 +1,4 @@
-# vue-sync
+# v-sync
 
 ## Project setup
 ```

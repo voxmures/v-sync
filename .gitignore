@@ -2,6 +2,7 @@
 node_modules
 dist/*.map
 dist/*.umd.*
+dist/*.html
 
 # local env files
 .env.local

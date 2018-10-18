@@ -1,9 +1,9 @@
 import install from './install';
 
-export default class VueSync {
+export default class VSync {
 	static install;
 
-	constructor (options) {
+	constructor () { }
+}
 
-	};
-};
+VSync.install = install;

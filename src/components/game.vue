@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import * as PIXI from 'pixi.js';
+
 export default {
 	name: 'Game',
 	props: {
@@ -19,12 +21,14 @@ export default {
 	},
 	data () {
 		return {
-			canvas: null
+			canvas: null,
+			renderer: null
 		}
 	},
 	// Lifecycle Hooks
 	mounted () {
 		this.canvas = this.$refs['canvas'];
+		this.renderer = new PIXI.autoDetectRenderer({ view: this.canvas });
 	}
 };
 </script>
