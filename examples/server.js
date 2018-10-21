@@ -15,6 +15,7 @@ const fs = require('fs');
 const path = require('path');
 
 fs.readdirSync(__dirname).forEach(file => {
+	if (file === 'static') return;
 	if (fs.statSync(path.join(__dirname, file)).isDirectory())
 		app.use(rewrite('/' + file + '/*', '/' + file + '/index.html'));
 });

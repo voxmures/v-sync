@@ -2,8 +2,11 @@ import install from './install';
 
 export default class VSync {
 	static install;
+	options = {};
 
-	constructor () { }
+	constructor (options) { 
+		this.options = options;
+	}
 }
 
 VSync.install = install;

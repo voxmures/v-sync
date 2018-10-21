@@ -1,4 +1,4 @@
-import Game from './components/game';
+import { Game, Container, Sprite } from './components';
 
 export let _Vue;
 
@@ -9,4 +9,6 @@ export default function install (Vue) {
 	_Vue = Vue;
 
 	Vue.component('Game', Game);
+	Vue.component('Container', Container);
+	Vue.component('Sprite', Sprite);
 }

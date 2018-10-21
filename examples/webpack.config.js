@@ -2,8 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const VuePlugin = require('vue-loader/lib/plugin');
 
-console.log(__dirname);
-
 module.exports = {
 	mode: process.env.NODE_ENV || 'development',
 

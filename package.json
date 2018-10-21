@@ -29,6 +29,7 @@
     "url": "https://github.com/voxmures/v-sync/issues"
   },
   "dependencies": {
+    "@tweenjs/tween.js": "^17.2.0",
     "pixi.js": "^4.8.2",
     "vue": "^2.5.17"
   },
